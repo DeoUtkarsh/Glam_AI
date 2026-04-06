@@ -1,0 +1,70 @@
+# --- Secrets & local env (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+venv/
+.venv/
+env/
+ENV/
+# setuptools / build outputs (repo root only — avoid ignoring e.g. frontend/src/lib)
+/build/
+/dist/
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+dist-ssr/
+*.local
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
+# --- Logs & debug ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- OS & editors ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code (optional team file)
+.vscode/*
+!.vscode/extensions.json
+
+# --- Misc ---
+*.tmp
+*.temp
+.cache/
