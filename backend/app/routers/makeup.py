@@ -41,7 +41,7 @@ async def generate_makeup(
     style_id: str = Form(..., description="One of the ids from GET /api/styles"),
 ) -> GenerateMakeupResponse:
     """
-    Full pipeline: MediaPipe face mask → Replicate FLUX Fill → Gemini steps → masked compositing.
+    Full pipeline: MediaPipe face mask → Replicate FLUX Fill → NIM/hardcoded steps → masked compositing.
     Returns base64 PNG for `final_image` and each step's `image`.
     """
     style = get_style(style_id)
